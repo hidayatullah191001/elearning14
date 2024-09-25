@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Dashboard</title>
+</head>
+<body>
+  <header>
+    <nav id="nav-laptop" class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary ">
+      <a class="navbar-brand text-white" href="#"><img width="150" src="assets/img/ic_logo.png" alt=""></a>
+      <div class="justify-content-center collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">My Course<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Profile<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About<span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+      </div>
+      <div class="form-inline d-sm-block d-none">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img class="img-avatar" src="assets/img/img_profile.png" alt="">
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">Account Settings</a>
+                <a class="dropdown-item text-danger" href="#">Logout</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <nav id="nav-mobile" class="fixed-top bg-primary">
+        <div class="row align-items-center">
+            <div class="col">
+                <a class="navbar-brand text-white" href="#"><img width="150" src="assets/img/ic_logo.png" alt=""></a>
+            </div>
+            <div class="dropdown">
+                <a class="nav-linkdropdown-toggle" href="#" id="DropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img class="img-avatar" src="assets/img/img_profile.png" alt="">
+                  </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Home</a>
+                    <a class="dropdown-item" href="#">My Course</a>
+                    <a class="dropdown-item" href="#">Profile</a>
+                    <a class="dropdown-item" href="#">Account Settings</a>
+                    <a class="dropdown-item text-danger" href="#">Logout</a>
+                </div>
+              </div>
+        </div>
+      </nav>
+      
+  </header>
+
+    <div class="profile-head"></div>
+    <div class="container">
+       <div class="row m-0 align-items-center">
+        <img class="img-profile" src="assets/img/img_profile.png" alt="">
+        <div class="col">
+            <h3 class="color-dark">Mujibur Rakhman M.Kom</h3>
+            <h6 class="color-dark">mujiburrakhman72@gmail.com</h6>
+        </div>
+       </div>
+       <div class="mt-5"></div>
+       <div class="alert alert-danger">Lengkapi data akun kamu terlebih dahulu untuk enroll course</div>
+
+    <section id="profile">
+        <div class="row">
+            <div class="col col-lg-3 mb-4">
+              <div class="card">
+                <div class="card-body">
+                    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <a class="btn btn-link active" id="v-pills-profile-tab" data-toggle="pill" data-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="true">Profile</a>
+                        <a class="btn btn-link" id="v-pills-photo-tab" data-toggle="pill" data-target="#v-pills-photo" type="button" role="tab" aria-controls="v-pills-photo" aria-selected="false">Photo Profile</a>
+                        <a class="btn btn-link" id="v-pills-password-tab" data-toggle="pill" data-target="#v-pills-password" type="button" role="tab" aria-controls="v-pills-password" aria-selected="false">Ubah Password</a>
+                        <a href="" style="text-decoration: none;" class="btn btn-link text-danger">Logout</a>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-9">
+              <div class="tab-content" id="v-pills-tabContent">
+                <div class="tab-pane fade show active" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="color-dark">Profile User</h4>
+                            <form action="" class="mt-5">
+                                <div class="form-group">
+                                    <label for="" style="font-weight: 500;">Nama Lengkap</label>
+                                    <input type="text" style="border-radius: 10px; height: 40px;" class="form-control" placeholder="Masukkan nama lengkap...">
+                                </div>
+                                <div class="form-group">
+                                    <label for="" style="font-weight: 500;">Email</label>
+                                    <input type="text" style="border-radius: 10px; height: 40px;" class="form-control" placeholder="Masukkan email valid...">
+                                </div>
+                                <div class="form-group">
+                                    <label for="" style="font-weight: 500;">NISN</label>
+                                    <input type="text" style="border-radius: 10px; height: 40px;" class="form-control" placeholder="Masukkan NISN...">
+                                </div>
+                                <div class="form-group">
+                                    <label for="" style="font-weight: 500;">Kelas</label>
+                                    <!-- <input type="text" style="border-radius: 10px; height: 40px;" class="form-control" placeholder="Masukkan email valid..."> -->
+                                    <select name="" id=""  style="border-radius: 10px; height: 40px;" class="form-control">
+                                        <option selected disabled>Pilih kelas...</option>
+                                        <option value="">X IPA I</option>
+                                        <option value="">X IPA II</option>
+                                        <option value="">X IPA III</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="" style="font-weight: 500;">No Telepon</label>
+                                    <input type="text" style="border-radius: 10px; height: 40px;" class="form-control" placeholder="Masukkan No Telepon...">
+                                </div>
+                                <div class="form-group text-center mt-5">
+                                    <button class="btn btn-primary">Perbarui Profile</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="v-pills-photo" role="tabpanel" aria-labelledby="v-pills-photo-tab">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="color-dark">Photo Profile</h4>
+                            <form action="" class="mt-5">
+                                <div class="form-group">
+                                <label for="" style="font-weight: 500;">Photo Sekarang</label><br>
+                                <img src="assets/img/img_profile.png" alt="">
+                                </div>
+                                <div class="form-group mt-4">
+                                    <label for="" style="font-weight: 500;">Upload Photo Baru</label>
+                                    <input type="file" style="border-radius: 10px; height: 40px;" class="form-control" placeholder="Masukkan nama lengkap...">
+                                </div>
+                                <div class="form-group text-center mt-5">
+                                    <button class="btn btn-primary">Perbarui Profile</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="v-pills-password" role="tabpanel" aria-labelledby="v-pills-password-tab">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="color-dark">Ubah Password</h4>
+                            <form action="" class="mt-5">
+                                <div class="form-group">
+                                    <label for="" style="font-weight: 500;">Masukkan Password Baru</label>
+                                    <input type="text" style="border-radius: 10px; height: 40px;" class="form-control" placeholder="Masukkan nama lengkap...">
+                                </div>
+                                <div class="form-group">
+                                    <label for="" style="font-weight: 500;">Ulangi Password Baru</label>
+                                    <input type="text" style="border-radius: 10px; height: 40px;" class="form-control" placeholder="Masukkan email valid...">
+                                </div>
+                                <div class="form-group text-center mt-5">
+                                    <button class="btn btn-primary">Perbarui Password</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
+          
+    </section>
+  </div>
+  <footer>
+    <div class="row">
+        <div class="col-lg-5 col-md-3 col">
+            <img width="150" src="assets/img/ic_logo.png" alt="">
+            <p style="font-weight: 200;" class="mt-4 mb-4">Learning Management System merupaakan manajemen 
+                konten online atau platform pengiriman konten online. Guna LMS adalah 
+                untuk mendukung proses belajar-mengajar di SMA Negeri 14 Palembang menjadi 
+                lebih interaktif dan juga lebih efektif</p>    
+        </div>
+        <div class="col">
+            <h5>Site Links</h5>
+            <ul class="list-unstyled">
+                <li class="py-2"><a href="" style="text-decoration: none; color: #fff; font-weight: 200;">Home</a></li>
+                <li class="py-2"><a href="" style="text-decoration: none; color: #fff; font-weight: 200;">About</a></li>
+                <li class="py-2"><a href="" style="text-decoration: none; color: #fff; font-weight: 200;">My Course</a></li>
+                <li class="py-2"><a href="" style="text-decoration: none; color: #fff; font-weight: 200;">Profile</a></li>
+            </ul>
+        </div>
+        <div class="col">
+            <h5>Any Question?</h5>
+            <ul class="list-unstyled">
+                <li class="py-2" style="font-weight: 200;">Jl. Pangeran Ayin Kenten Sako Palembang Sumatera Selatan</li>
+                <li class="py-2" style="font-weight: 200;">0711-811588</li>
+                <li class="py-2" style="font-weight: 200;">admin.lms14@gmail.com</li>
+            </ul>
+        </div>
+    </div>
+    <center class="mt-5">
+        <h6 style="font-weight: 400;">Copyright ©2023 All rights reserved | E-Learning SMA Negeri 14 Palembang</h6>
+    </center>
+  </footer>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
